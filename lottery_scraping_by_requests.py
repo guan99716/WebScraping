@@ -1,5 +1,5 @@
 # requests
-# 表單填入
+# 表單填入, 爬取某年某月的威力彩球號
 import requests
 from bs4 import BeautifulSoup
 import re
