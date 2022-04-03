@@ -39,5 +39,5 @@ if __name__ == '__main__':
         
     for i in range(1,13):
         lottery(104,i)
-    print(----下載完畢----)
+    print('----下載完畢----')
     driver.quit()
