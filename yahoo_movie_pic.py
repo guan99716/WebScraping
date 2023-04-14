@@ -1,7 +1,7 @@
 import requests, os
 from bs4 import BeautifulSoup
 
-dir = '本週新片'
+dir = 'NewMovies(This_Week)'
 if not os.path.exists(dir):
   os.mkdir(dir)
 
@@ -17,4 +17,4 @@ for img in ul.find_all('img'):
   with open(dir + '\\' + fn,'wb') as f:
     for d in pic.iter_content():
       f.write(d)
-    print('已下載:',fn)
+    print('downloading:',fn)
